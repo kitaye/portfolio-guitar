@@ -7,7 +7,7 @@
 ```sh
 $ git clone git@github.com:loftschool/ls-advanced-portfolio.git
 $ cd ls-advanced-portfolio
-$ yarn
+$ npm i
 ```
 
 ## Скрипты package.json:
