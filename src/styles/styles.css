@@ -5,7 +5,7 @@
     margin: 0 auto 33px;
     width: 130px;
     justify-content: space-between;
-} 
+}
 
 .about-body__pic-author1 {
 	width: 50px;
@@ -61,15 +61,9 @@
 	font-size: 50px;
 }
 
-.about {	
+.about {
 	background-image: url(images/i9GY3R67X.png);
 	color: white;
-}
-
-.about-wrap {
-	background-image: linear-gradient(to right, #313131d9 100%, #1c2023 42%, rgba(27, 31, 34, 0) 100%);
-	padding: 98px 34px;
-	opacity: 0.9;
 }
 
 .contact-me__form-submit {
@@ -77,7 +71,7 @@
 }
 
 .about-body__text {
-	margin: 0;	
+	margin: 0;
 	font-size: 14px;
 	margin-bottom: 30px;
 }
@@ -132,7 +126,7 @@
 	margin: 0 0 40px 0;
 }
 
-.about-header__left-btn, 
+.about-header__left-btn,
 .about-header__right-btn {
 	display: flex;
     align-items: center;
@@ -178,7 +172,7 @@
 	margin-bottom: 50px;
 }
 
-.form__input-contact, 
+.form__input-contact,
 .form__input-message {
 	width: 260px;
     border: none;
@@ -205,7 +199,7 @@
 
 .footer {
 	padding: 50px 10% 50px 10%;
-	background: grey;	
+	background: grey;
 	display: flex;
 }
 
@@ -226,7 +220,7 @@
 	 padding: 0;
 }
 
-.footer__nav-item {	
+.footer__nav-item {
 	margin-right: 5%;
 }
 
@@ -235,7 +229,7 @@
 }
 
 .footer__info-wrap {
-	display: flex;	
+	display: flex;
 }
 
 .footer__copyright-by {
