@@ -5,7 +5,7 @@
 
 ##  Чтобы развернуть проект необходимо:
 ```sh
-$ git clone git clone https://github.com/kitaye/portfolio-guitar.git
+$ git clone https://github.com/kitaye/portfolio-guitar.git
 $ cd ls-advanced-portfolio
 $ npm i
 ```
