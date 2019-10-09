@@ -1,15 +1,17 @@
 .form
-    h1.title.title-form Связаться со мной
-    form.form__wrap
+    h3.title.form-title Связаться со мной
+    form.container
         .form__container
             .form__input.form__input_name
                 +icon('user', 'form__icon')
                 label.form__label.form__label_name(for='form__input-name') Введите ваше имя
                 input#form__input-name.form__input-contact.form__input-contact_name(type='text', placeholder='Ivanov Ivan')
             .form__input.form__input_email
+                +icon('envelope', 'form__icon')
                 label.form__label.form__label_email(for='form__input-email') Введите ваш e-mail
                 input#form__input-email.form__input-contact.form__input-contact_email(type='text', placeholder='i.ivanov@mail.ru')
         .form__input.form__input_message
+            +icon('message', 'form__icon')
             label.form__label.form__label_message(for='form__input-message') Сообщение к письму
             textarea#form__input-message.form__input-contact.form__input-contact_message(placeholder='Требуется ваша помощь в создании сайта. Интересуют сроки и цена вопроса')
         .submit-wrap
