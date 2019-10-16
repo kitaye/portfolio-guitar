@@ -1,3 +1,13 @@
+.icon-bg {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  background: svg-load('github.svg', fill=$text-color, width=100%, height=100%);
+  &:hover {
+    background: svg-load('github.svg', fill=#55ddcc, width=100%, height=100%);
+  }
+}
+
 .form {
   z-index: 2;
   position: relative;
@@ -55,7 +65,7 @@
 }
 
 .form__input-contact_message {
-  height: 67px;
+  padding: 15px 40px 20px 40px;
 }
 
 .form__form-submit {
