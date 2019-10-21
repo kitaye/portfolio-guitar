@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack-dev-server --mode=development --hot",
     "build": "webpack --mode=production --progress",
-    "reg": "node reg-util.js"
+    "reg": "node reg-util.js",
+    "stylelint": "stylelint ./src/styles/main.pcss ./src/styles/blocks/*.pcss ./src/styles/layout/*.pcss"
   },
   "keywords": [],
   "author": "",
@@ -55,6 +56,10 @@
     "pug": "^2.0.3",
     "request": "^2.88.0",
     "signale": "^1.4.0",
+    "stylelint": "^11.1.1",
+    "stylelint-config-airbnb": "0.0.0",
+    "stylelint-order": "^3.1.1",
+    "stylelint-scss": "^3.11.1",
     "vue": "^2.6.7",
     "vue-router": "^3.0.2"
   }
