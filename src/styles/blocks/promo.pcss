@@ -1,9 +1,10 @@
 .promo {
     margin-bottom: 100px;
     padding-top: 150px;
-    font-family: "Open Sans", Helvetica, sans-serif;
     height: 100vh;
     max-height: 1000px;
+    background-image: url("../images/content/landskape.png");
+    background-position: center;
 }
 
 .promo__container {
@@ -79,13 +80,17 @@
     line-height: 24px;
 }
 
-.example {
-    color: $white;
-    //@media (min-width: 100px) {
-    //    color: black;
-    //}
-    @include desktop() {
-        color: black;
+.promo__parallax {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+
+    @include laptop() {
+        display: block;
     }
 }
+
 

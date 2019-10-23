@@ -1,7 +1,10 @@
 .footer {
     background-color: $footer-color;
     padding: 65px 0;
-    font-family: "Open Sans", Helvetica, sans-serif;
+
+    @include tablets() {
+        padding: 60px 50px;
+    }
 }
 
 .footer__copyright {

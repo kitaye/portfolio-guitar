@@ -7,5 +7,6 @@
   "bp-phones": "480px",
   "white": "#fff",
   "navy": "#2b3948",
-  "footer-color": "#1b1f22"
+  "footer-color": "#1b1f22",
+  "bp-laptop": "1024px"
 }
