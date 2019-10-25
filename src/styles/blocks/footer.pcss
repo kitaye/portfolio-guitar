@@ -4,7 +4,7 @@
 }
 
 .footer_container {
-    @include tablets(), @include desktop() {
+    @include tablets() {
         display: flex;
         justify-content: space-between;
     }
@@ -14,19 +14,25 @@
     @include tablets() {
         width: 25%;
     }
+    @include desktop() {
+        width: 15.4%;
+    }
 }
 
 .footer-main {
     @include tablets() {
         width: 68%;
     }
+    @include desktop() {
+        width: 75%;
+    }
 }
 
 .footer__nav {
     display: none;
 
-    @include tablets(), @include desktop() {
-       display: block;
+    @include tablets() {
+        display: block;
     }
 }
 
@@ -38,15 +44,31 @@
     }
 }
 
+.footer__info-wrap {
+    @include desktop() {
+         display: flex;
+    }
+}
+
+.footer__info-page {
+    @include desktop() {
+        width: 58%;
+    }
+}
+
+footer__info-quote {
+    @include desktop() {
+        width: 40%;
+    }
+}
+
 .footer__nav-item {
     margin: 0 55px 30px 0;
-
 }
 
 .footer__copyright {
     opacity: .1;
     color: $white;
-
     font-size: 48px;
     font-weight: 400;
     margin-bottom: 31px;
