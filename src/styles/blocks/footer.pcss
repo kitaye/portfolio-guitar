@@ -52,13 +52,14 @@
 
 .footer__info-page {
     @include desktop() {
-        width: 58%;
+        width: 50%;
+        margin-right: 5%;
     }
 }
 
-footer__info-quote {
+.footer__info-quote {
     @include desktop() {
-        width: 40%;
+        width: 68%;
     }
 }
 
@@ -92,6 +93,10 @@ footer__info-quote {
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 49px;
+
+    @include desktop() {
+        font-size: 16px;
+    }
 }
 
 .footer__info-text {
@@ -100,6 +105,10 @@ footer__info-quote {
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 18px;
+
+    @include desktop() {
+        font-size: 16px;
+    }
 }
 
 .socials {
@@ -112,4 +121,8 @@ footer__info-quote {
     font-size: 14px;
     font-style: italic;
     line-height: 24px;
+
+    @include desktop() {
+        font-size: 16px;
+    }
 }
