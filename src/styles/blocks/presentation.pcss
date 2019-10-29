@@ -34,3 +34,46 @@
     font-size: 18px;
     font-weight: 700;
 }
+
+.presentation__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.presentation__item {
+    width: 115px;
+    height: 115px;
+    position: relative;
+}
+
+.presentation__icon-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.presentation__icon {
+    width: 115px;
+    height: 115px;
+    fill: transparent;
+    transform: rotate(180deg);
+}
+
+.presentation__cirle {
+    stroke-dasharray: 360;
+
+    &_under {
+        stroke: #363635;
+        stroke-width: 5px;
+    }
+
+    &_above {
+        stroke: #ef8900;
+        stroke-width: 10px;
+    }
+}
