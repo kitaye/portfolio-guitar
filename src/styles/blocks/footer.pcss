@@ -14,8 +14,20 @@
     @include tablets() {
         width: 25%;
     }
+
     @include desktop() {
         width: 15.4%;
+    }
+
+    @include desktopHd() {
+        display: flex;
+        width: 31%;
+    }
+}
+
+.footer__copyright-by-container {
+    @include desktopHd() {
+        width: 31%;
     }
 }
 
@@ -23,20 +35,16 @@
     @include tablets() {
         width: 68%;
     }
+
     @include desktop() {
         width: 75%;
     }
 }
 
-.footer__nav {
-    display: none;
-
-    @include tablets() {
-        display: block;
-    }
-}
-
 .footer__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+
     @include tablets() {
         display: flex;
         flex-wrap: wrap;
@@ -46,7 +54,7 @@
 
 .footer__info-wrap {
     @include desktop() {
-         display: flex;
+        display: flex;
     }
 }
 
@@ -55,16 +63,34 @@
         width: 50%;
         margin-right: 5%;
     }
+
+    @include desktopHd() {
+        width: 30%;
+        margin-right: 15%;
+    }
 }
 
 .footer__info-quote {
     @include desktop() {
         width: 68%;
     }
+
+    @include desktopHd() {
+        width: 40%;
+    }
 }
 
 .footer__nav-item {
     margin: 0 55px 30px 0;
+    font-size: 14px;
+
+    @include tablets() {
+        font-size: 16px;
+    }
+
+    @include desktop() {
+        font-size: 18px;
+    }
 }
 
 .footer__copyright {
@@ -73,6 +99,18 @@
     font-size: 48px;
     font-weight: 400;
     margin-bottom: 31px;
+
+    @include tablets() {
+        line-height: .9;
+    }
+
+    @include desktop() {
+        line-height: .84;
+    }
+
+    @include desktopHd() {
+        margin-right: 60px;
+    }
 }
 
 .footer__copyright-by {
@@ -85,6 +123,10 @@
     @include tablets() {
         margin-bottom: 30px;
     }
+
+    @include desktopHd() {
+        margin-bottom: 35px;
+    }
 }
 
 .footer__copyright-theme {
@@ -94,8 +136,16 @@
     font-weight: 400;
     margin-bottom: 49px;
 
-    @include desktop() {
+    @include tablets() {
         font-size: 16px;
+    }
+
+    @include desktop() {
+        font-size: 18px;
+    }
+
+    @include desktopHd() {
+        font-size: 18px;
     }
 }
 
@@ -106,8 +156,13 @@
     font-weight: 400;
     margin-bottom: 18px;
 
-    @include desktop() {
+    @include tablets() {
         font-size: 16px;
+    }
+
+    @include desktop() {
+        font-size: 18px;
+        margin-bottom: 18px;
     }
 }
 
@@ -124,5 +179,10 @@
 
     @include desktop() {
         font-size: 16px;
+        padding-top: 5px;
+    }
+
+    @include desktopHd() {
+        font-size: 18px;
     }
 }
