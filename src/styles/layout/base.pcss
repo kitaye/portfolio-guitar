@@ -55,10 +55,20 @@ body {
     font-weight: 600;
 }
 
+.text {
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
 .container {
     margin: 0 auto;
     max-width: 1480px;
-    width: 87%;
+    width: 83%;
+
+    @include tablets() {
+        width: 86%;
+    }
 }
 
 .fullscreen-section {
