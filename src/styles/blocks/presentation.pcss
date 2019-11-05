@@ -1,12 +1,25 @@
 .presentation {
-    padding-top: 100px;
+    padding: 100px 0 235px;
     background-image: url("../images/content/wood-bcg.png");
+    position: relative;
+
+    @include tablets() {
+        padding: 120px 0 350px;
+    }
+
+    @include desktop() {
+        padding: 150px 0;
+    }
 }
 
 .presentation__list {
-    margin-bottom: 60px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.presentation__list_frontend {
+    margin-bottom: 30px;
 }
 
 .presentation__title {
@@ -16,10 +29,21 @@
     margin-bottom: 30px;
 
     @include tablets() {
-        color: $white;
         font-size: 30px;
-        font-weight: 700;
         line-height: 1.1;
+        text-align: center;
+        margin: 0 24% 30px;
+    }
+
+    @include desktop() {
+        margin: 0 35% 60px 25%;
+    }
+}
+
+.presentation__skill-container {
+
+    @include desktop() {
+        margin-left: 360px;
     }
 }
 
@@ -28,8 +52,20 @@
     color: $white;
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.8;
     margin-bottom: 60px;
+
+    @include tablets() {
+        margin: 0 18% 60px;
+        line-height: 1.8;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    @include desktop() {
+        text-align: left;
+        margin: 0 26% 100px 25%
+    }
 }
 
 .presentation__frontend {
@@ -43,6 +79,11 @@
 .presentation__subtitle {
     text-align: center;
     margin-bottom: 35px;
+
+    @include tablets() {
+        font-size: 20px;
+        font-weight: 700;
+    }
 }
 
 .presentation__Workflow {
@@ -53,16 +94,15 @@
     font-weight: 700;
 }
 
-.presentation__list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .presentation__item {
     width: 115px;
     height: 115px;
     position: relative;
     margin-bottom: 30px;
+
+    @include tablets() {
+        margin-bottom: 0;
+    }
 }
 
 .presentation__icon-text {
@@ -95,5 +135,38 @@
     &_above {
         stroke: $orange;
         stroke-width: 10px;
+    }
+}
+
+.presentation__hands-img {
+    background-image: url("../images/content/mobile-hands.png");
+    width: 338px;
+    height: 235px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include tablets() {
+        width: 486px;
+        height: 337px;
+    }
+
+    @include desktop() {
+        background-image: url("../images/content/hands.png");
+        width: 490px;
+        height: 707px;
+        left: -90px;
+        bottom: -65px;
+        transform: none;
+    }
+
+    @include desktopHd() {
+        width: 682px;
+        height: 983px;
+        left: 0px;
+        bottom: -92px
     }
 }
