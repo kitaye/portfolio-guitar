@@ -38,6 +38,10 @@
     @include desktop() {
         margin: 0 35% 60px 25%;
     }
+
+    @include desktopHd() {
+        margin: 0 auto 60px;
+    }
 }
 
 .presentation__skill-container {
@@ -45,6 +49,13 @@
     @include desktop() {
         margin-left: 360px;
     }
+
+    @include desktopHd() {
+        margin-left: 630px;
+        margin-right: 150px;
+    }
+
+
 }
 
 .presentation__text {
@@ -64,7 +75,11 @@
 
     @include desktop() {
         text-align: left;
-        margin: 0 26% 100px 25%
+        margin: 0 26% 100px 25%;
+    }
+
+    @include desktopHd() {
+        margin: 0 30% 100px 36%;
     }
 }
 
@@ -83,6 +98,11 @@
     @include tablets() {
         font-size: 20px;
         font-weight: 700;
+    }
+
+    @include desktop() {
+        text-align: left;
+        font-size: 24px;
     }
 }
 
@@ -103,6 +123,11 @@
     @include tablets() {
         margin-bottom: 0;
     }
+
+    @include desktop() {
+        width: 135px;
+        height: 135px;
+    }
 }
 
 .presentation__icon-text {
@@ -115,6 +140,11 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 2;
+
+    @include desktop() {
+        font-size: 18px;
+        font-weight: 700;
+    }
 }
 
 .presentation__icon {
@@ -122,6 +152,11 @@
     height: 115px;
     fill: transparent;
     transform: rotate(180deg);
+
+    @include desktop() {
+        width: 135px;
+        height: 135px;
+    }
 }
 
 .presentation__cirle {

@@ -5,3 +5,6 @@ if (process.env.NODE_ENV === "development") {
 
 import anchorScroll from "./scripts/anchorScroll";
 anchorScroll();
+
+import parallax from "./scripts/parallax";
+parallax();

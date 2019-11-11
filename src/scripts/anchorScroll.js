@@ -20,12 +20,10 @@ function anchorScroll() {
 
                 const progress = time - start;
 
-                console.log(time, start);
-
                 let coordY =
                     coordAnchor < 0
-                        ? Math.max(windowY - progress / 0.5, windowY + coordAnchor)
-                        : Math.min(windowY + progress / 0.5, windowY + coordAnchor);
+                        ? Math.max(windowY - progress / 0.1, windowY + coordAnchor)
+                        : Math.min(windowY + progress / 0.1, windowY + coordAnchor);
 
                 window.scrollTo(0, coordY);
                 if (coordY !== windowY + coordAnchor) {

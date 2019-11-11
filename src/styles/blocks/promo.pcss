@@ -1,10 +1,15 @@
 .promo {
-    margin-bottom: 100px;
     padding-top: 150px;
     height: 100vh;
     max-height: 1000px;
     background-image: url("../images/content/landskape.png");
     background-position: center;
+    position: relative;
+    min-height: 1250px;
+
+    @include laptop() {
+        background-image: none;
+    };
 }
 
 .promo__container {
@@ -28,27 +33,46 @@
     width: 100%;
     top: 0;
     left: 0;
+    display: none;
+    z-index: -1;
+
+    @include laptop() {
+        display: block;
+    }
 }
 
 .promo__parallax-item {
     position: absolute;
-    height: 100%;
+
+    &_sky {
+        left: 0;
+        top: 0;
+    }
+
+    &_mountains {
+        bottom: 40%;
+    }
+
+    &_train {
+        bottom: 30%;
+    }
+
+    &_field {
+        bottom: -10%;
+    }
+
+    &_shadow {
+        bottom: 0;
+    }
 }
 
 .promo__parallax-layer {
-    object-fit: cover;
     width: 100%;
-    height: 100%;
-    object-position: center;
+
+    &_sky {
+
+    }
 }
 
-.promo__parallax {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    display: none;
-}
 
 
