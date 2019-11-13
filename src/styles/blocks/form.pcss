@@ -26,9 +26,14 @@
     }
 
     @include desktop() {
-        font-size: 36px;
+        font-size: 38px;
         font-weight: 700;
         text-align: left;
+    }
+
+    @include desktopHd() {
+        font-size: 38px;
+        font-weight: 700;
     }
 }
 
@@ -38,7 +43,8 @@
         justify-content: space-between;
     }
 
-    @inclide desktop() {
+    @include desktop() {
+        display: flex;
         justify-content: flex-start;
     }
 }
@@ -55,6 +61,10 @@
 
     @include tablets() {
         width: 40%;
+    }
+
+    @include tablets() {
+        width: 35%;
     }
 }
 
@@ -86,13 +96,12 @@
 .form__icon_message {
     bottom: 43px;
 
-    @include tablets(){
+    @include tablets() {
         bottom: 15px;
     }
 }
 
 .form__input_message {
-
     @include tablets() {
         bottom: 32px;
         margin-bottom: 0;
@@ -139,6 +148,7 @@
     @include desktop() {
         font-size: 20px;
         font-weight: 700;
+        margin-right: 15%;
     }
 }
 
@@ -155,7 +165,12 @@
     @include desktop() {
         font-size: 20px;
         font-weight: 700;
-        height: 32px;
+        height: 57px;
+        width: 74%;
+    }
+
+    @include desktopHd() {
+        width: 65%;
     }
 }
 
