@@ -1,10 +1,13 @@
 .header {
     margin-bottom: 150px;
     padding-top: 65px;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
+    position: fixed;
+    z-index: 3;
+
+    &.is-active {
+        background-color: #ccc;
+    }
 }
 
 .header-main {
@@ -23,4 +26,25 @@
     color: $white;
     font-size: 36px;
     font-weight: 400;
+}
+
+.header__socials {
+    width: 160px;
+    opacity: 0.3;
+}
+
+
+.socials {
+    display: none;
+
+    @include tablets() {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.header-main__label {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 30px;
 }

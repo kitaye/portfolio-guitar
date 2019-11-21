@@ -8,3 +8,8 @@ anchorScroll();
 
 import parallax from "./scripts/parallax";
 parallax();
+
+import headerFixation from "./scripts/headerFixation";
+headerFixation();
+
+
