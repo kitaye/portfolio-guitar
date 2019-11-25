@@ -7,19 +7,8 @@ footer.footer
                 p.footer__copyright-theme.text Личный сайт веб-разработчика
         .footer-main
             .footer__nav
-                ul.footer__nav-list
-                    li.footer__nav-item
-                        a.footer__nav-link(href="#header") Главная
-                    li.footer__nav-item
-                        a.footer__nav-link(href="#about") Обо мне
-                    li.footer__nav-item
-                        a.footer__nav-link(href="#presentation") Навыки
-                    li.footer__nav-item
-                        a.footer__nav-link(href="#projects") Работы
-                    li.footer__nav-item
-                        a.footer__nav-link(href="#reviews") Отзывы
-                    li.footer__nav-item
-                        a.footer__nav-link(href="#form") Связаться
+                include nav
+                +nav("footer")
             .footer__info-wrap
                 .footer__info-page
                     p.footer__info.text Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool

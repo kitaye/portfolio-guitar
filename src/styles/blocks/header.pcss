@@ -31,15 +31,15 @@
 .header__socials {
     width: 160px;
     opacity: .3;
-}
-
-
-.socials {
     display: none;
 
     @include tablets() {
         display: flex;
-        justify-content: space-between;
+        margin-left: 50%;
+    }
+
+    @include desktop() {
+        margin-left: 0;
     }
 }
 
@@ -48,3 +48,29 @@
     font-weight: 400;
     line-height: 30px;
 }
+
+.socials__link_header {
+    margin-right: 30px;
+}
+
+.header-main__menu {
+    @include desktop() {
+        display: none;
+    }
+}
+
+.header__nav {
+    display: none;
+    line-height: 2;
+    margin: 0 0 0 6%;
+
+    @include desktop() {
+        display: flex;
+    }
+}
+
+.nav-list {
+    flex-direction: row;
+    width: max-content;
+}
+
