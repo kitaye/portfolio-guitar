@@ -1,19 +1,19 @@
 .about#about
-    .container
-        .about-block
-            +image('content/photo_nikita.jpg', 'about-block__img', 'фото')
-        table.about-block__table
-            tr.about-block__table-row
-                td.about-block__table-data.about-block__table-data_question Проживаю:
-                td.about-block__table-data Москва
-            tr.about-block__table-row
-                td.about-block__table-data.about-block__table-data_question Возраст:
-                td.about-block__table-data 30 лет
-            tr.about-block__table-row
-                td.about-block__table-data.about-block__table-data_question Родился:
-                td.about-block__table-data 18 октября 1989
+    .about-container.container
+        .about-block__wrap
+            .about-block
+                +image('content/photo_nikita.jpg', 'about-block__img', 'фото')
+            table.about-block__table
+                tr.about-block__table-row
+                    td.about-block__table-data.about-block__table-data_question Проживаю:
+                    td.about-block__table-data Москва
+                tr.about-block__table-row
+                    td.about-block__table-data.about-block__table-data_question Возраст:
+                    td.about-block__table-data 30 лет
+                tr.about-block__table-row
+                    td.about-block__table-data.about-block__table-data_question Родился:
+                    td.about-block__table-data 18 октября 1989
         .about-block__info
-        .about-block__about
             .about-block__hello Привет, меня зовут
             .about-block__name Никита Садовников
             p.about-block__text-author.text Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.

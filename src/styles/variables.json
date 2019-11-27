@@ -10,5 +10,6 @@
   "orange": "#ef8900",
   "dark-grey": "#1c2023",
   "footer-color": "#1b1f22",
-  "bp-laptop": "1024px"
+  "bp-laptop": "1024px",
+  "dark": "#2d3c4e"
 }

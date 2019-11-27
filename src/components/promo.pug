@@ -1,4 +1,8 @@
 .promo#main
+    .promo__background-landskape
+        +image("content/111.png", "promo__landskape-image", "landskape")
+    .promo__background-train
+        +image("content/landskape-train.png", "promo__background-train-image", "train")
     .container.promo__container
         h1.promo__title.text Личный сайт в разработке
         .promo__name Никита Садовников
@@ -13,3 +17,5 @@
             +image("content/parallax-field.png", "promo__parallax-layer promo__parallax-layer_field", "", "presentation")
         .promo__parallax-item.promo__parallax-item_shadow
             +image("content/parallax-shadow.png", "promo__parallax-layer promo__parallax-layer_shadow", "", "presentation")
+    //.promo__black-rectangle
+    //    +image("content/black-rectangle.png", "promo__black-rectangle-image", "black-rectangle")
