@@ -12,4 +12,10 @@ parallax();
 import headerFixation from "./scripts/headerFixation";
 headerFixation();
 
+import sendForm from "./scripts/sendForm"
+const form = new sendForm()
+form.init({
+  form: document.querySelector(".js-form"),
+});
+
 

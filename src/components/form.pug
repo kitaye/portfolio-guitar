@@ -1,18 +1,19 @@
 .form#form
     .container
         h2.title.form-title Связаться со мной
-        form.form__wrapper
-            .form__input.form__input_name.form__input_personal
-                +icon('user', 'form__icon')
-                label.form__label.form__label_name(for='inputName') Введите ваше имя
-                input#inputName.form__input-contact.form__input-contact_name(type='text', placeholder='Ivanov Ivan')
-            .form__input.form__input_email.form__input_personal
-                +icon('envelope', 'form__icon')
-                label.form__label.form__label_email(for='inputEmail') Введите ваш e-mail
-                input#inputEmail.form__input-contact.form__input-contact_email(type='text', placeholder='i.ivanov@mail.ru')
-        .form__input.form__input_message
-            +icon('message', 'form__icon form__icon_message')
-            label.form__label.form__label_message(for='inputMessage') Сообщение к письму
-            textarea#inputMessage.form__input-contact.form__input-contact_message(placeholder='Требуется ваша помощь в создании сайта. Интересуют сроки и цена вопроса')
-        .submit-wrap
-            button.form__form-submit(type='submit') Отправить
+        form.form__wrapper.js-form(action="https://webdev-api.loftschool.com/sendmail" method="POST")
+            .form__container
+                .form__input.form__input_name.form__input_personal
+                    +icon('user', 'form__icon')
+                    label.form__label.form__label_name(for='inputName') Введите ваше имя
+                    input#inputName.form__input-contact.form__input-contact_name.js-input(type='text', placeholder='Ivanov Ivan')
+                .form__input.form__input_email.form__input_personal
+                    +icon('envelope', 'form__icon')
+                    label.form__label.form__label_email(for='inputEmail') Введите ваш e-mail
+                    input#inputEmail.form__input-contact.form__input-contact_email.js-input(type='text', placeholder='i.ivanov@mail.ru')
+            .form__input.form__input_message
+                +icon('message', 'form__icon form__icon_message')
+                label.form__label.form__label_message(for='inputMessage') Сообщение к письму
+                textarea#inputMessage.form__input-contact.form__input-contact_message.js-input(placeholder='Требуется ваша помощь в создании сайта. Интересуют сроки и цена вопроса')
+            .submit-wrap
+                button.form__form-submit(type='submit') Отправить
