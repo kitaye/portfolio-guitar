@@ -18,11 +18,20 @@
     object-fit: cover;
     object-position: top;
     margin: 0 auto;
+
+    @include desktop() {
+        width: 155px;
+        height: 155px;
+    }
 }
 
 .about-block {
     clip-path: circle();
     margin-bottom: 30px;
+
+    @include tablets() {
+        margin-bottom: 60px;
+    }
 }
 
 .about-block__table {
@@ -64,10 +73,20 @@
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 52px;
+
+    @include desktop() {
+        margin-bottom: 25px;
+    }
 }
 
 .about-block__info {
     margin-bottom: 50px;
+
+    @include desktop() {
+        margin-right: 15%;
+        width: 43%;
+    }
+
 }
 
 .about-block__text-author {
@@ -77,6 +96,14 @@
     font-weight: 400;
     margin-bottom: 48px;
     line-height: 24px;
+
+    @include tablets() {
+        margin-bottom: 40px;
+    }
+
+    @include desktop() {
+        margin-bottom: 75px;
+    }
 }
 
 .about-block__text-site {
@@ -91,8 +118,12 @@
 
     @include tablets() {
         margin-right: 14%;
+        width: 100%;
     }
-
+    @include desktop() {
+        margin-right: 15%;
+        width: 20%;
+    }
 }
 
 
